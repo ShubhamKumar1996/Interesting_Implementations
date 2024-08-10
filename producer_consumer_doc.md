@@ -36,10 +36,111 @@
     4.  buffermutex unlock
     5.  update emptyslot using semaphore
 
-
 ## Instructions to Run Solution
 1.  C++ compiler that support atleast C++20.
 2.  Tested with g++ version 14.2.0 in windows OS.
 3.  Commands to run program:
     1.  g++ -std=c++20 producer_consumer.cpp -o  producer_consumer
     2.  producer_consumer.exe
+
+
+## Output of the Implementation
+Producer Thread: Producing at Position: 0 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 0, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 1 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 2 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 0, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 3 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 100, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 4 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 100, buffer[4] = 100 <br>
+Producer Thread: Produced <br>
+
+Consumer Thread: Consuming at Position: 4 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 100, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 3 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 2 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 1 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 0, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 0 <br>
+Buffer Status: <br>
+buffer[0] = 0, buffer[1] = 0, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Producer Thread: Producing at Position: 0 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 0, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 1 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 2 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 0, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 3 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 100, buffer[4] = 0 <br>
+Producer Thread: Produced <br>
+
+Producer Thread: Producing at Position: 4 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 100, buffer[4] = 100 <br>
+Producer Thread: Produced <br>
+
+Consumer Thread: Consuming at Position: 4 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 100, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 3 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 100, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 2 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 100, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 1 <br>
+Buffer Status: <br>
+buffer[0] = 100, buffer[1] = 0, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed <br>
+
+Consumer Thread: Consuming at Position: 0 <br>
+Buffer Status: <br>
+buffer[0] = 0, buffer[1] = 0, buffer[2] = 0, buffer[3] = 0, buffer[4] = 0 <br>
+Consumer Thread: Consumed
